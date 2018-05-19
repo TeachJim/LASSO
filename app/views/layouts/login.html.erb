@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LASSO Login</title>
+</head>
+<body>
+  <div><select name="org" id="">
+      <option value="iLEARNet"></option>
+      <option value="TeachJim"></option>
+      <option value="GOOD Enterprises, Inc"></option>
+    </select>
+  <input type="text" name="" id="">
+  <input type="password" name="" id="">
+  <button type="submit"></button>
+</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LASSO Your Learning</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="topbar"><%= link_to('home',{:action=>'index'})%><img src="" alt="" class="logo">
+  <div>
+    <%= yield %>
+    <div class="bottombar">
+    
+    </div>
+    </body>
+    </html>

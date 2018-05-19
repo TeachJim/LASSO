@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>LASSO Your Learning</title>
+      <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+    <body>
+      <div class="topbar"><%= link_to('home',{:action=>'index'})%><img src="" alt="" class="logo"/>
+        <div class="adminconfig"><%= link_to("Admin", {:action => 'ca', :id => 20}) %></div>
+        <div>
+          <%= yield %>
+          <div class="bottombar">
+            <div class="todo"><%= link_to('ToDo', {:action => 'todo'}, class:'todolink' )%>
+            </div>
+          </div>
+        </body>
+      </html>

@@ -1,0 +1,73 @@
+// Place all the styles related to the lasso controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "compass";
+
+body {
+  font-family: sans-serif;
+  font-size  : 1.5em;
+  font-weight: 100;
+  margin     : 0;
+  height     : 700px;
+  overflow   : auto;
+}
+
+a {
+  color          : #618acc;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  height          : 80px;
+  width           : 200px;
+  background-color: #ffffff;
+  border-color    : #dddddd;
+  border-style    : double;
+}
+
+.topbar {
+  height: 75px;
+  width : 100%;
+}
+
+.bottombar {
+  height  : 100px;
+  /* Height of the footer */
+  width   : 100%;
+  position: absolute;
+  bottom  : 0;
+}
+
+.bottombar,
+.topbar {
+  // Needs latest Compass, add '@import "compass"' to your scss
+  // Permalink - use to edit and share this gradient:
+  // http://colorzilla.com/gradient-editor/#70b0e0+9,70b0e0+39,88bfe8+87,88bfe8+87;Bleeding+Blue
+  margin-left     : 0;
+  background-color: #70b0e0; // Old browsers
+  @include filter-gradient(#70b0e0, #88bfe8, vertical); // IE6-9
+  @include background-image(linear-gradient(top, #70b0e0 9%,#70b0e0 39%,#88bfe8 87%,#88bfe8 87%));
+}
+
+.adminconfig,
+.todo {
+  font-family : sans-serif;
+  margin-left : 1em;
+  margin-right: 1em;
+  padding-left: 10px;
+  font-variant: small-caps;
+  text-align  : right;
+  padding     : 20px;
+}
